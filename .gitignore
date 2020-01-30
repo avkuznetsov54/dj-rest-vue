@@ -7,6 +7,6 @@ __pycache__/
 *.so
 
 
-backend/venv
-frontend/node_modules
+backend/venv/
+frontend/node_modules/
 frontend/package-lock.json
