@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de76945f-c3ae-4fc8-a318-f47e039381c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/auth_user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/auth_user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/cars/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/cars/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/media/logo_bank/logo_vtb.png" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/media/logo_bank/logo_vtb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/mortgages/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/mortgages/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/mortgages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/mortgages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/mortgages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/mortgages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MortgagesListComp.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+            <state relative-caret-position="322">
+              <caret line="488" column="5" selection-start-line="488" selection-start-column="5" selection-end-line="488" selection-end-column="5" />
               <folding>
                 <element signature="e#16445#16503#0" expanded="true" />
               </folding>
@@ -368,12 +363,12 @@
       <workItem from="1580025408784" duration="14536000" />
       <workItem from="1580100236713" duration="140000" />
       <workItem from="1580100398218" duration="9456000" />
-      <workItem from="1580175950872" duration="73325000" />
+      <workItem from="1580175950872" duration="78256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226789000" />
+    <option name="totallyTimeSpent" value="231720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -659,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MortgagesListComp.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+        <state relative-caret-position="322">
+          <caret line="488" column="5" selection-start-line="488" selection-start-column="5" selection-end-line="488" selection-end-column="5" />
           <folding>
             <element signature="e#16445#16503#0" expanded="true" />
           </folding>

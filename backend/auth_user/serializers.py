@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.utils import timezone
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -50,10 +50,18 @@ class CustomJWTSerializer(TokenObtainPairSerializer):
         return super().validate(credentials)
 
 
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ('name',)
+
+
 class UserSerializer(serializers.ModelSerializer):
+    groups = GroupSerializer(many=True)
+
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ('username', 'email', 'groups')
 
 
 class ModSerializer(serializers.ModelSerializer):

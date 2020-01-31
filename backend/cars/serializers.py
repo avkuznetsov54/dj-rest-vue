@@ -11,7 +11,7 @@ class CarListSerializer(serializers.ModelSerializer):
         fields = ('vin', 'color', 'brand', 'car_type', 'user', 'year', 'volume')
         # fields = '__all__'
 
-    # вместо id выводиться username
+    # вместо username_id выводиться username
     def get_user(self, obj):
         return obj.user.username
 

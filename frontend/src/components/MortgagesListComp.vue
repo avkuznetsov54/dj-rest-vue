@@ -7,6 +7,7 @@
             <v-col cols="12" md="2">
               <v-select
                 multiple
+                clearable
                 label="Банк"
                 placeholder="Любой"
                 :items="BANKS_DATA"
@@ -26,6 +27,8 @@
             <v-col cols="12" md="2">
               <v-select
                 multiple
+                clearable
+                autocomplete
                 label="Цель ипотеки"
                 placeholder="Любая"
                 :items="TARGET_CREDITS_DATA"
@@ -48,8 +51,8 @@
 
             <v-col cols="12" md="2">
               <v-text-field
-                v-model="filters.property_value"
-                type="text"
+                v-model.number="filters.property_value"
+                type="number"
                 label="Стоимость недвижимости, руб"
                 placeholder="Любая"
               ></v-text-field>
@@ -433,7 +436,8 @@ export default {
       selectTargets: ["Foo", "Bar", "Fizz", "Buzz"],
       // panel: [],
       panel2: [],
-      items: 5
+      items: 5,
+      value: null
     };
   },
   computed: {
