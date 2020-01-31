@@ -3,18 +3,18 @@ from rest_framework import generics
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
 
-from mortgages.models import MortgagePrograms
-from mortgages.serializers import MortgageProgramsSerializer
+from mortgages.models import MortgagePrograms, Banks, TargetCredits
+from mortgages.serializers import MortgageProgramsSerializer, BanksSerializer, TargetCreditsSerializer
 
 
-class MyPagination(PageNumberPagination):
-    page_size = 100
+class MortgagePagination(PageNumberPagination):
+    page_size = 1000
 
 
 class MortgageProgramsView(generics.ListAPIView):
     serializer_class = MortgageProgramsSerializer
     queryset = MortgagePrograms.objects.all()
-    pagination_class = MyPagination
+    pagination_class = MortgagePagination
     permission_classes = (IsAuthenticated, )
 
     def filter_queryset(self, queryset):
@@ -26,6 +26,14 @@ class MortgageProgramsView(generics.ListAPIView):
             # если 'v' равно пустой строке то прекращаем итерацию что не занести её в queryset, а то 500 error
             if v == '':
                 continue
+            if k == 'bank_name':
+                k = 'programs_bank__bank_name' + '__in'
+                v = v.split(',')
+                params.update({k: v})
+            if k == 'names_target_credits':
+                k = 'programs_target__target_name' + '__in'
+                v = v.split(',')
+                params.update({k: v})
             if k == 'property_value':
                 k1 = 'min_sum_credit' + '__lte'
                 params.update({k1: v})
@@ -43,3 +51,15 @@ class MortgageProgramsView(generics.ListAPIView):
 
         # return queryset.order_by('-rate')
         return queryset
+
+
+class BanksView(generics.ListAPIView):
+    serializer_class = BanksSerializer
+    queryset = Banks.objects.all()
+    permission_classes = (IsAuthenticated,)
+
+
+class TargetCreditsView(generics.ListAPIView):
+    serializer_class = TargetCreditsSerializer
+    queryset = TargetCredits.objects.all()
+    permission_classes = (IsAuthenticated,)

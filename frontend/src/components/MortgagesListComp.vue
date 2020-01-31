@@ -7,10 +7,39 @@
             <v-col cols="12" md="2">
               <v-select
                 multiple
+                label="Банк"
+                placeholder="Любой"
+                :items="BANKS_DATA"
+                v-model="filters.bank_name"
+              >
+                <template v-slot:selection="{ item, index }">
+                  <span v-if="index === 0">
+                    <span>{{ item }} </span>
+                  </span>
+                  <span v-if="index === 1" class="ml-1 grey--text caption"
+                    >(+{{ filters.bank_name.length - 1 }})</span
+                  >
+                </template>
+              </v-select>
+            </v-col>
+
+            <v-col cols="12" md="2">
+              <v-select
+                multiple
                 label="Цель ипотеки"
                 placeholder="Любая"
-                :items="selectTargets"
-              ></v-select>
+                :items="TARGET_CREDITS_DATA"
+                v-model="filters.names_target_credits"
+              >
+                <template v-slot:selection="{ item, index }">
+                  <span v-if="index === 0">
+                    <span>{{ item }} </span>
+                  </span>
+                  <span v-if="index === 1" class="ml-1 grey--text caption"
+                    >(+{{ filters.names_target_credits.length - 1 }})</span
+                  >
+                </template>
+              </v-select>
             </v-col>
 
             <!--        <v-col cols="12" md="2">-->
@@ -52,13 +81,21 @@
                 placeholder="Любой"
               ></v-text-field>
             </v-col>
+          </v-row>
+          <v-row>
+            <v-spacer></v-spacer>
+            <v-col cols="12" md="1">
+              <v-btn color="primary">+ ещё </v-btn>
+            </v-col>
 
             <v-col cols="12" md="1">
-              <v-btn color="blue-grey">+ ещё </v-btn>
+              <v-btn color="primary" @click="clearFilter()"
+                ><v-icon>mdi-cached</v-icon></v-btn
+              >
             </v-col>
 
             <v-col cols="12" md="2">
-              <v-btn color="primary" type="submit">Подобрать </v-btn>
+              <v-btn color="primary" type="submit" width="150">Найти </v-btn>
             </v-col>
           </v-row>
         </v-container>
@@ -103,13 +140,21 @@
         <v-expansion-panel-header class="py-0">
           <v-container class="py-0" fill-height fluid>
             <v-row align="center" justify="center">
-              <v-col cols="8" sm="6" md="3" lg="3">
+              <v-col cols="4" sm="2" md="1" lg="2">
                 <div>
                   <v-img
                     :src="mort.bank.bank_logo"
-                    max-width="150"
-                    max-height="42"
+                    max-width="120"
+                    height="50"
+                    contain
                   ></v-img>
+                </div>
+              </v-col>
+              <v-col cols="8" sm="6" md="3" lg="2">
+                <div class="mt-2">
+                  <span class="grey--text text--darken-1 body-2"
+                    >«{{ mort.bank.bank_name }}»
+                  </span>
                 </div>
                 <div>
                   <span class="grey--text text--darken-3 body-2"
@@ -123,12 +168,11 @@
                     class="grey--text text--darken-3 headline font-weight-black"
                     >{{ mort.rate }}%
                   </span>
-                </div>
-                <div>
-                  <span class="text--secondary"
+                  <span class="text--secondary nowrap"
                     >{{ mort.first_payment }}% ПВ
                   </span>
                 </div>
+                <div></div>
               </v-col>
               <v-col cols="12" sm="6" md="4" lg="4" class="text--secondary">
                 <div>
@@ -145,7 +189,7 @@
                   </span>
                 </div>
               </v-col>
-              <v-col cols="6" sm="6" md="3" lg="3" class="text--secondary">
+              <v-col cols="6" sm="6" md="3" lg="2" class="text--secondary">
                 <div>
                   <span class="text--secondary"
                     >возраст от {{ mort.min_borrower_age }} до
@@ -393,11 +437,23 @@ export default {
     };
   },
   computed: {
-    ...mapState("mortgages", ["MORTGAGES_DATA"])
+    ...mapState("mortgages", [
+      "MORTGAGES_DATA",
+      "BANKS_DATA",
+      "TARGET_CREDITS_DATA"
+    ])
   },
   methods: {
-    ...mapMutations("mortgages", ["SET_UPDATE_MORTGAGES_DATA"]),
-    ...mapActions("mortgages", ["FETCH_MORTGAGES"]),
+    ...mapMutations("mortgages", [
+      "SET_UPDATE_MORTGAGES_DATA",
+      "SET_UPDATE_BANKS_DATA",
+      "SET_UPDATE_TARGET_CREDITS_DATA"
+    ]),
+    ...mapActions("mortgages", [
+      "FETCH_MORTGAGES",
+      "FETCH_BANKS",
+      "FETCH_TARGET_CREDITS"
+    ]),
 
     // Create an array the length of our items
     // with all values as true
@@ -410,27 +466,10 @@ export default {
     none() {
       this.panel2 = [];
     },
-
-    fetchMortgages(params) {
-      // getAPI
-      //   .get(url, {
-      //     headers: { Authorization: `Bearer ${this.$store.state.accessToken}` },
-      //     params: params
-      //   }) // proof that your access token is still valid; if not the
-      //   // axios getAPI response interceptor will attempt to get a new  access token from the server. check out ../api/axios-base.js getAPI instance response interceptor
-      //   .then(response => {
-      //     // console.log("GetAPI successfully got the mods");
-      //     // console.log(response);
-      //     this.SET_UPDATE_MORTGAGES_DATA(response.data.results); // store the response data in store
-      //   })
-      //   .catch(err => {
-      //     // refresh token expired or some other error status
-      //     // eslint-disable-next-line no-unused-vars
-      //     const er = err; // просто чтоб ошибку в консоли не показывало
-      //     // console.log(err);
-      //     console.log("[mortgages] Не получилось");
-      //   });
-      this.FETCH_MORTGAGES(params);
+    clearFilter() {
+      this.filters = [];
+      this.FETCH_MORTGAGES();
+      return this.filters;
     },
     filterMortgages() {
       const params = new URLSearchParams();
@@ -438,15 +477,19 @@ export default {
         if (this.filters[item] !== "") {
           params.append(item, this.filters[item]);
         }
-        // console.log(params);
+        // console.log(this.filters[item]);
       }
       // this.fetchMortgages(this.url, params);
       this.FETCH_MORTGAGES(params);
+      // console.log(this.BANKS_DATA);
     }
   },
   created() {
-    this.fetchMortgages(this.url);
+    this.FETCH_MORTGAGES();
+    this.FETCH_BANKS();
+    this.FETCH_TARGET_CREDITS();
   },
+  mounted() {},
   filters: {
     numCredit(value) {
       return new Intl.NumberFormat().format(value);
@@ -466,5 +509,8 @@ export default {
 .expand-transition-leave-active,
 .expand-transition-enter-active {
   transition: none !important;
+}
+.nowrap {
+  white-space: nowrap;
 }
 </style>
