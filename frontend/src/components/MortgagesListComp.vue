@@ -7,18 +7,18 @@
             <v-col cols="12" md="2">
               <v-select
                 multiple
-                clearable
                 label="Банк"
                 placeholder="Любой"
                 :items="BANKS_DATA"
                 v-model="filters.bank_name"
+                dense
               >
                 <template v-slot:selection="{ item, index }">
-                  <span v-if="index === 0">
-                    <span>{{ item }} </span>
-                  </span>
-                  <span v-if="index === 1" class="ml-1 grey--text caption"
-                    >(+{{ filters.bank_name.length - 1 }})</span
+                  <!--                  <span v-if="index === 0">-->
+                  <!--                    <span>{{ item }} </span>-->
+                  <!--                  </span>-->
+                  <span v-if="index === 0" class="ml-1 grey--text caption"
+                    >Выбранно {{ filters.bank_name.length }} шт.</span
                   >
                 </template>
               </v-select>
@@ -27,19 +27,19 @@
             <v-col cols="12" md="2">
               <v-select
                 multiple
-                clearable
-                autocomplete
                 label="Цель ипотеки"
                 placeholder="Любая"
                 :items="TARGET_CREDITS_DATA"
                 v-model="filters.names_target_credits"
+                dense
               >
                 <template v-slot:selection="{ item, index }">
-                  <span v-if="index === 0">
-                    <span>{{ item }} </span>
-                  </span>
-                  <span v-if="index === 1" class="ml-1 grey--text caption"
-                    >(+{{ filters.names_target_credits.length - 1 }})</span
+                  <!--                  <span v-if="index === 0">-->
+                  <!--                    <span>{{ item }} </span>-->
+                  <!--                  </span>-->
+                  <span v-if="index === 0" class="ml-1 grey--text caption"
+                    >Выбранно
+                    {{ filters.names_target_credits.length }} шт.</span
                   >
                 </template>
               </v-select>
@@ -55,6 +55,8 @@
                 type="number"
                 label="Стоимость недвижимости, руб"
                 placeholder="Любая"
+                min="0"
+                dense
               ></v-text-field>
             </v-col>
 
@@ -64,6 +66,8 @@
                 type="number"
                 label="Первоначальный взнос, %"
                 placeholder="Любой"
+                min="0"
+                dense
               ></v-text-field>
             </v-col>
 
@@ -73,6 +77,8 @@
                 type="number"
                 label="Ставка"
                 placeholder="Любая"
+                min="0"
+                dense
               ></v-text-field>
             </v-col>
 
@@ -82,23 +88,74 @@
                 type="number"
                 label="Срок"
                 placeholder="Любой"
+                min="0"
+                dense
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <v-row v-if="visibleSearch">
+            <v-col cols="12" md="2">
+              <v-text-field
+                type="number"
+                label="Парам, руб"
+                placeholder="Любая"
+                min="0"
+                dense
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="2">
+              <v-text-field
+                type="number"
+                label="Парам, руб"
+                placeholder="Любая"
+                min="0"
+                dense
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="2">
+              <v-text-field
+                type="number"
+                label="Парам, руб"
+                placeholder="Любая"
+                min="0"
+                dense
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="2">
+              <v-text-field
+                type="number"
+                label="Парам, руб"
+                placeholder="Любая"
+                min="0"
+                dense
               ></v-text-field>
             </v-col>
           </v-row>
           <v-row>
             <v-spacer></v-spacer>
-            <v-col cols="12" md="1">
-              <v-btn color="primary">+ ещё </v-btn>
-            </v-col>
+            <v-col cols="12" sm="6" md="5">
+              <v-btn
+                color="primary"
+                class="mx-1 float-right"
+                @click="toggleSearch"
+                ><v-icon>
+                  {{ visibleSearch ? "mdi-chevron-up" : "mdi-chevron-down" }}
+                </v-icon>
+              </v-btn>
 
-            <v-col cols="12" md="1">
-              <v-btn color="primary" @click="clearFilter()"
-                ><v-icon>mdi-cached</v-icon></v-btn
-              >
-            </v-col>
-
-            <v-col cols="12" md="2">
-              <v-btn color="primary" type="submit" width="150">Найти </v-btn>
+              <v-btn
+                color="primary"
+                class="mx-1 float-right"
+                @click="clearFilter()"
+                ><v-icon>mdi-cached</v-icon>
+              </v-btn>
+              <v-btn
+                color="primary"
+                class="mx-1 float-right"
+                type="submit"
+                width="150"
+                >Найти
+              </v-btn>
             </v-col>
           </v-row>
         </v-container>
@@ -107,34 +164,15 @@
 
     <v-spacer class="my-4"></v-spacer>
 
-    <div class="text-center d-flex pb-4">
-      <v-btn @click="all">Развернуть</v-btn>
+    <div class="text-center d-flex pb-4 float-right">
+      <v-btn v-if="showFullMortgage" color="blue-grey lighten-5" @click="all"
+        >Развернуть</v-btn
+      >
       <!--      <div>{{ panel }}</div>-->
-      <v-btn @click="none">Свернуть</v-btn>
+      <v-btn v-else @click="none">Свернуть</v-btn>
     </div>
 
-    <!--    <v-expansion-panels v-model="panel" multiple>-->
-    <!--      <v-expansion-panel v-for="(item, i) in items" :key="i">-->
-    <!--        <v-expansion-panel-header>-->
-    <!--          <v-row no-gutters>-->
-    <!--            <v-col cols="3">Header {{ item }}</v-col>-->
-    <!--            <v-col cols="3" class="text&#45;&#45;secondary">Start and end dates</v-col>-->
-    <!--            <v-col cols="3" class="text&#45;&#45;secondary">Start and end dates</v-col>-->
-    <!--            <v-col cols="3" class="text&#45;&#45;secondary">Start and end dates</v-col>-->
-    <!--          </v-row>-->
-    <!--        </v-expansion-panel-header>-->
-
-    <!--        <v-expansion-panel-content>-->
-    <!--          <v-divider></v-divider>-->
-    <!--          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do-->
-    <!--          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad-->
-    <!--          minim veniam, quis nostrud exercitation ullamco laboris nisi ut-->
-    <!--          aliquip ex ea commodo consequat.-->
-    <!--        </v-expansion-panel-content>-->
-    <!--      </v-expansion-panel>-->
-    <!--    </v-expansion-panels>-->
-
-    <v-expansion-panels v-model="panel2" multiple>
+    <v-expansion-panels v-model="panel" multiple>
       <v-expansion-panel
         class="no-transition"
         v-for="(mort, i) in MORTGAGES_DATA"
@@ -151,6 +189,14 @@
                     height="50"
                     contain
                   ></v-img>
+                </div>
+                <div v-if="mort.bank.preference_is_active">
+                  <v-chip x-small color="cyan" text-color="white">
+                    <span
+                      >Преференция
+                      <b>{{ mort.bank.preference_value }}%</b></span
+                    >
+                  </v-chip>
                 </div>
               </v-col>
               <v-col cols="8" sm="6" md="3" lg="2">
@@ -174,6 +220,17 @@
                   <span class="text--secondary nowrap"
                     >{{ mort.first_payment }}% ПВ
                   </span>
+                </div>
+                <div class="mt-1" v-if="mort.rate_salary">
+                  <v-chip
+                    x-small
+                    color="grey lighten-4"
+                    text-color="grey darken-1"
+                  >
+                    <span
+                      ><b>{{ mort.rate_salary }}%</b> зарплатникам</span
+                    >
+                  </v-chip>
                 </div>
                 <div></div>
               </v-col>
@@ -388,6 +445,8 @@
                   </v-list-item-content>
                 </v-list-item>
               </v-col>
+
+
               <v-col cols="12" sm="6" md="4" lg="4" align="left">
                 <v-list-item>
                   <v-list-item-content class="grey--text text--darken-1">
@@ -422,8 +481,6 @@
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import { getAPI } from "../api/mortgages/axios-mortgages";
 import { mapState, mapMutations, mapActions } from "vuex";
 
 export default {
@@ -434,10 +491,9 @@ export default {
       url: "api/v1/mortgages/all/",
       filters: [],
       selectTargets: ["Foo", "Bar", "Fizz", "Buzz"],
-      // panel: [],
-      panel2: [],
-      items: 5,
-      value: null
+      panel: [],
+      showFullMortgage: true,
+      visibleSearch: false
     };
   },
   computed: {
@@ -458,17 +514,22 @@ export default {
       "FETCH_BANKS",
       "FETCH_TARGET_CREDITS"
     ]),
+    toggleSearch() {
+      this.visibleSearch = !this.visibleSearch;
+    },
 
     // Create an array the length of our items
     // with all values as true
     all() {
-      this.panel2 = [...Array(this.MORTGAGES_DATA.length).keys()].map(
+      this.panel = [...Array(this.MORTGAGES_DATA.length).keys()].map(
         (k, i) => i
       );
+      this.showFullMortgage = !this.showFullMortgage;
     },
     // Reset the panel
     none() {
-      this.panel2 = [];
+      this.panel = [];
+      this.showFullMortgage = !this.showFullMortgage;
     },
     clearFilter() {
       this.filters = [];

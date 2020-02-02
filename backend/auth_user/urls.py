@@ -3,9 +3,9 @@ from django.urls import path
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView)
-from auth_user.views import ModsView, MyUserView, CustomTokenObtainPairView
+from .views import ModsView, MyUserView, CustomTokenObtainPairView
 
-from auth_user.views import Logout
+from .views import Logout
 
 urlpatterns = [
     # Path to obtain a new access and refresh token

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac934dc0-24f1-43a8-ab1f-ea4de40e22ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/auth_user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_user/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cars/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydata.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/MortgagesListComp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/MortgagesListComp.vue" afterDir="false" />
     </list>
@@ -56,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="190" column="49" lean-forward="true" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
+            <state relative-caret-position="420">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -137,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth_user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="129">
               <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
@@ -146,11 +146,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth_user/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
-              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -201,6 +210,7 @@
         <option value="$PROJECT_DIR$/mortgages/views.py" />
         <option value="$PROJECT_DIR$/cars/serializers.py" />
         <option value="$PROJECT_DIR$/auth_user/serializers.py" />
+        <option value="$PROJECT_DIR$/entrypoint.sh" />
       </list>
     </option>
   </component>
@@ -331,18 +341,17 @@
       <workItem from="1580025375882" duration="20597000" />
       <workItem from="1580100233838" duration="143000" />
       <workItem from="1580100399001" duration="15512000" />
-      <workItem from="1580175951724" duration="33371000" />
+      <workItem from="1580175951724" duration="34462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114870000" />
+    <option name="totallyTimeSpent" value="115961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17338218" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17338218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -356,7 +365,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27755103" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27755103" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -606,16 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="190" column="49" lean-forward="true" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mortgages/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -683,9 +682,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auth_user/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auth_user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="129">
           <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
@@ -693,12 +702,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth_user/serializers.py">
+    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="9" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#308#317#0" expanded="true" />
           </folding>
         </state>
       </provider>

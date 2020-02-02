@@ -3,9 +3,9 @@ from rest_framework.response import Response
 from rest_framework import generics
 from rest_framework_simplejwt.token_blacklist.models import OutstandingToken
 
-from auth_user.models import Mods
+from .models import Mods
 from django.contrib.auth.models import User
-from auth_user.serializers import ModSerializer, UserSerializer, CustomJWTSerializer
+from .serializers import ModSerializer, UserSerializer, CustomJWTSerializer
 
 from rest_framework_simplejwt.views import TokenObtainPairView
 # from django.contrib.auth.models import update_last_login

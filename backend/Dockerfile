@@ -1,6 +1,8 @@
 # pull official base image
 FROM python:3.8.0-alpine
 
+RUN mkdir -p /log/gunicorn/
+
 # set work directory
 WORKDIR /usr/src/app
 

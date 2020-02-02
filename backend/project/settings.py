@@ -67,6 +67,7 @@ MIDDLEWARE = [
 # **Dont forget to add your client's address to the CORS whitelist. This will make sure the server accepts request from
 # the specified source only
 CORS_ORIGIN_WHITELIST = (
+    'http://localhost',
     'http://localhost:8080',
     'http://127.0.0.1:8080',
     'http://192.168.19.198:5000',
