@@ -2,133 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ca90b90-b076-4bdc-a61f-77b27195870d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/gunicorn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/log/gunicorn/gunicorn-access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/log/gunicorn/gunicorn-error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/nginx-access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/nginx-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth_user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth_user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth_user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth_user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mydata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/css/chunk-34e97d75.40b76df9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.6dfb8184.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/app.6dfb8184.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/chunk-34e97d75.d65705db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/chunk-34e97d75.d65705db.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/chunk-vendors.33751321.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/dist/js/chunk-vendors.33751321.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/axios-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/axios-base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/mortgages/axios-mortgages.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/mortgages/axios-mortgages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MortgagesListComp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MortgagesListComp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/gunicorn.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gunicorn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/conf.d/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/conf.d/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/1247" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/1247" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/1249" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/1249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/1259" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/1259" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/1259_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/1259_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/1259_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16384" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16384" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16386" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16386" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16393" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16393" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16395" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16395" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16397" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16397" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16401" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16401" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16403" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16403" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16405" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16405" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16407" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16407" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16411" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16411" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16413" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16413" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16415" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16415" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16419" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16419" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16421" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16421" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16423" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16423" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16425" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16425" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16429" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16429" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16431" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16431" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16433" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16433" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16437" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16437" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16439" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16439" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16441" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16441" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16443" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16443" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16447" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16447" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16457" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16457" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16464" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16464" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16465" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16465" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16466" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16466" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16478" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16478" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16479" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16479" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16480" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16480" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16481" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16481" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16493" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16493" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16494" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16494" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16509" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16509" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16511" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16511" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16519" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16519" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16531" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16531" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16532" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16532" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16550" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16550" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16552" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16552" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16569" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16569" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16575" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16575" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16577" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16577" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16578" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16578" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16587" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16587" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16589" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16589" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16596" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16596" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16612" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16612" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16613" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16613" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16615" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16615" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16556" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16556" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16558" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16558" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16565" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16565" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/16566" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/16566" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2224" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2224" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2579" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2604" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2604" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2606" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2606" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2606_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2606_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2608" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2608_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2610" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2610" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2610_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2610_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2619" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2619" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2619_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2619_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2619_vm" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2619_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2620" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2620" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2656" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2656" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2657" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2657" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2658" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2658" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2659" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2662" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2662" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2663" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2663" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2664" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2664" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2665" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2665" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2666" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2666" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2667" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2667" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2673" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2673" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2674" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2674" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2678" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2679" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2679" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2696" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2696" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2699" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2699" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2701" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2701" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2702" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2702" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2703" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2703" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2704" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/2840" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/2840" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/3455" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/3455" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/base/13423/5002" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/5002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/base/13423/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/base/13423/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat/db_0.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat/db_13423.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat/global.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat_tmp/db_13423.stat" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/pg_stat_tmp/db_13423.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/pg_stat_tmp/global.stat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pgdata/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgdata/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/pgdata/postmaster.pid" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,30 +77,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/api/axios-base.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/gunicorn.py">
+        <entry file="file://$PROJECT_DIR$/backend/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="494">
+              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
-                <element signature="e#30#67#0" expanded="true" />
+                <element signature="e#84#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -215,19 +116,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/project/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nginx/conf.d/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
+            <state relative-caret-position="596">
+              <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -265,6 +157,7 @@
     <findStrings>
       <find>frontend_03</find>
       <find>127.0.0.1:8000</find>
+      <find>DEFAULT_PORT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -289,13 +182,14 @@
         <option value="$PROJECT_DIR$/reset_docker.sh" />
         <option value="$PROJECT_DIR$/backend/gunicorn.conf" />
         <option value="$PROJECT_DIR$/backend/Dockerfile" />
-        <option value="$PROJECT_DIR$/backend/gunicorn.py" />
         <option value="$PROJECT_DIR$/backend/entrypoint.sh" />
         <option value="$PROJECT_DIR$/nginx/Dockerfile" />
         <option value="$PROJECT_DIR$/frontend/src/api/axios-base.js" />
         <option value="$PROJECT_DIR$/backend/project/settings.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/backend/gunicorn.py" />
+        <option value="$PROJECT_DIR$/backend/manage.py" />
         <option value="$PROJECT_DIR$/nginx/conf.d/nginx.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -344,6 +238,11 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj-rest-vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dj-rest-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,18 +351,18 @@
       <updated>1579578720361</updated>
       <workItem from="1579578722936" duration="29681000" />
       <workItem from="1579678918257" duration="31113000" />
-      <workItem from="1580537714074" duration="28486000" />
+      <workItem from="1580537714074" duration="30947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89280000" />
+    <option name="totallyTimeSpent" value="91741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14468865" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14468865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.32959184" />
@@ -478,7 +377,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26122448" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26020408" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="SvgViewer" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -491,25 +390,26 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14468865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26734695" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2877551" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32959184" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.26734695" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.26122448" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="SvgViewer" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32967034" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,22 +608,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/project/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://5227c5d5-dbee-4e7e-b13e-a7748dc774be/schema/main/table/mortgages_banks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <folding>
-            <element signature="e#223#232#0" expanded="true" />
-          </folding>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/nginx-access.log">
+    <entry file="file://$PROJECT_DIR$/reset_docker.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3140" />
+        <state relative-caret-position="133">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/nginx-error.log">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/backend/entrypoint.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/log/gunicorn/gunicorn-error.log">
       <provider selected="true" editor-type-id="text-editor" />
@@ -741,19 +647,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://5227c5d5-dbee-4e7e-b13e-a7748dc774be/schema/main/table/mortgages_banks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/backend/project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
+          <folding>
+            <element signature="e#223#232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
+        <state relative-caret-position="-1307">
           <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/project/asgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#223#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/nginx-error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/nginx-access.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3157" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/api/axios-base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,17 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/api/axios-base.js">
+    <entry file="file://$PROJECT_DIR$/nginx/conf.d/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entrypoint.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="596">
+          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -788,31 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reset_docker.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/conf.d/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
+        <state relative-caret-position="213">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
         </state>
       </provider>
     </entry>
